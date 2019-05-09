@@ -21,8 +21,6 @@ public class DBManager {
 // 	 	 	return true; 
 	 	return (conn!=null); 
 	} 	
-	 	
-
 
 	public static Connection startConnection(){ 
 	 	if ( isOpen() ) 
