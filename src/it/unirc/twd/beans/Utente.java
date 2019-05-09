@@ -1,4 +1,4 @@
-package it.unirc.twb.dao.beans;
+package it.unirc.twd.beans;
 
 public class Utente {
 private String Username;
