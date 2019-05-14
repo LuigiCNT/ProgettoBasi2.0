@@ -13,7 +13,7 @@ import it.unirc.twd.beans.UtenteDAO;
 /**
  * Servlet implementation class RichiestaLogin
  */
-@WebServlet("/RichiestaLogin")
+@WebServlet("/RichiediLogin")
 public class RichiediLogin extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -32,16 +32,20 @@ public class RichiediLogin extends HttpServlet {
 		// TODO Auto-generated method stub
 		Utente u = new Utente();
 		UtenteDAO uDAO = new UtenteDAO();
-		u.setUsername((String) request.getAttribute("username"));
-		u.setPassword((String) request.getAttribute("password"));
+		u.setUsername((String) request.getParameter("username"));
+		u.setPassword((String) request.getParameter("password"));
+		System.out.println(u.getUsername() + " " + u.getPassword());
+		response.getWriter().append("Ho preso i parametri");
 		boolean esiste = uDAO.login(u);
 		if(esiste) {
 			Utente loggato = uDAO.getUtente(u);
-			if(loggato.isAutorita()) {
+			response.getWriter().append("Ho controllato che esiste");
+			if(loggato.getAutorita()==1) {
 				//dispatcho alla index amministratore
 			}
-			else {
-				//dispatcho alla index di utente loggato
+			else if(loggato.getAutorita()==0){
+				response.getWriter().append("Sono all'autorità");
+				request.getRequestDispatcher("/WebContent/privato/utente/indexutente.jsp").forward(request, response);
 			}
 		}
 		else {

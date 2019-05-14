@@ -3,8 +3,8 @@ package it.unirc.twd.beans;
 public class Utente {
 private String Username;
 private String Password;
-private boolean Autorita;
-public Utente(String username, String password, boolean autorita) {
+private int Autorita;
+public Utente(String username, String password, int autorita) {
 	super();
 	Username = username;
 	Password = password;
@@ -22,17 +22,17 @@ public String getPassword() {
 public void setPassword(String password) {
 	Password = password;
 }
-public boolean isAutorita() {
+public int getAutorita() {
 	return Autorita;
 }
-public void setAutorita(boolean autorita) {
+public void setAutorita(int autorita) {
 	Autorita = autorita;
 }
 @Override
 public int hashCode() {
 	final int prime = 31;
 	int result = 1;
-	result = prime * result + (Autorita ? 1231 : 1237);
+	result = prime * result + Autorita;
 	result = prime * result + ((Password == null) ? 0 : Password.hashCode());
 	result = prime * result + ((Username == null) ? 0 : Username.hashCode());
 	return result;

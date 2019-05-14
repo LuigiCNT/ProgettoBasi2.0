@@ -25,7 +25,7 @@ public class UtenteDAO {
 				res=new Utente();
 				res.setUsername(rs.getString("username"));
 				res.setPassword(rs.getString("password"));
-				res.setAutorita(rs.getBoolean("autorità"));
+				res.setAutorita(rs.getInt("autorità"));
 			}
 		}catch(Exception e) {
 			e.getStackTrace();
@@ -41,7 +41,7 @@ public class UtenteDAO {
 			PreparedStatement ps = conn.prepareStatement(query);
 			ps.setString(1, ut.getUsername());
 			ps.setString(2, ut.getPassword());
-			ps.setBoolean(3, ut.isAutorita());
+			ps.setInt(3, ut.getAutorita());
 			int tmp=ps.executeUpdate();
 			if(tmp==1) {
 				esito=true;
@@ -76,7 +76,7 @@ public class UtenteDAO {
 		try {
 			PreparedStatement ps = conn.prepareStatement(query);
 			ps.setString(1, ut.getPassword());
-			ps.setBoolean(2, ut.isAutorita());
+			ps.setInt(2, ut.getAutorita());
 			ps.setString(3, ut.getUsername());
 			int tmp=ps.executeUpdate();
 			if(tmp==1) {
@@ -111,26 +111,31 @@ public class UtenteDAO {
 		res.setUsername(rs.getString("Username"));
 		res.setPassword(rs.getString("Password"));
 
-		res.setAutorita(rs.getBoolean("Autorità"));
+		res.setAutorita(rs.getInt("Autorità"));
 		return res;
 
 	}
 	public boolean login(Utente u) {
-		String query="SELECT * FROM Utente WHERE Username = ? AND Password = ?";
+		String query="SELECT * FROM hr.Utente WHERE Username = ? AND Password = ?";
 		boolean esito=false;
 		conn=DBManager.startConnection();
+		System.out.println("Sto qui");
 		try {
 			PreparedStatement ps = conn.prepareStatement(query);
 			ps.setString(1, u.getUsername());
 			ps.setString(2, u.getPassword());
+			System.out.println(ps);
 			int tmp=ps.executeUpdate();
-			if(tmp!=0) {
+			if(tmp==1) {
 				esito=true;
+				System.out.println(esito);
 			}
+			System.out.println("Dopo if" + esito);
 		}catch(Exception e) {
 			e.getStackTrace();
 		}
 		DBManager.closeConnection();
+		System.out.println(esito);
 		return esito;
 	}
 }
