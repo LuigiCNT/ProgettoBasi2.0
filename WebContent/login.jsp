@@ -124,7 +124,7 @@
               <div class="col-md-12">
                 <p>
                   <a href="https://www.facebook.com/SPARTAN-GYM-2067914556839010/" class="pb-2 pr-2 pl-0"><span class="icon-facebook"></span></a>
-                  
+                  <a href="https://www.google.com/maps/place/Spartan+Gym+A.S.D./@37.920421,15.9791221,17z/data=!3m1!4b1!4m5!3m4!1s0x1314ed23f6344475:0x754ccbd34c9040a5!8m2!3d37.9204168!4d15.9813108?hl=it"  target="_blank" class="p-2 pl-0"><span class="icon-map-marker"></span></a>
                   <a href="https://www.instagram.com/spartan_gym_palizzi_marina/?hl=it" class="p-2"><span class="icon-instagram"></span></a>
                  
 
