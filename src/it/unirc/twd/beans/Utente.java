@@ -3,8 +3,8 @@ package it.unirc.twd.beans;
 public class Utente {
 private String Username;
 private String Password;
-private int Autorita;
-public Utente(String username, String password, int autorita) {
+private String Autorita;
+public Utente(String username, String password, String autorita) {
 	super();
 	Username = username;
 	Password = password;
@@ -22,10 +22,10 @@ public String getPassword() {
 public void setPassword(String password) {
 	Password = password;
 }
-public int getAutorita() {
+public String getAutorita() {
 	return Autorita;
 }
-public void setAutorita(int autorita) {
+public void setAutorita(String autorita) {
 	Autorita = autorita;
 }
 @Override
