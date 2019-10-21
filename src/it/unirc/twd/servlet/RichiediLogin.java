@@ -40,10 +40,10 @@ public class RichiediLogin extends HttpServlet {
 		if(esiste) {
 			Utente loggato = uDAO.getUtente(u);
 			response.getWriter().append("Ho controllato che esiste");
-			if(loggato.getAutorita()==1) {
+			if(loggato.getAutorita().equals("si")) {
 				//dispatcho alla index amministratore
 			}
-			else if(loggato.getAutorita()==0){
+			else if(loggato.getAutorita().equals("no")){
 				response.getWriter().append("Sono all'autorità");
 				request.getRequestDispatcher("/WebContent/privato/utente/indexutente.jsp").forward(request, response);
 			}
