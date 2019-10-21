@@ -25,7 +25,7 @@ public class UtenteDAO {
 				res=new Utente();
 				res.setUsername(rs.getString("username"));
 				res.setPassword(rs.getString("password"));
-				res.setAutorita(rs.getInt("autorità"));
+				res.setAutorita(rs.getString("autorità"));
 			}
 		}catch(Exception e) {
 			e.getStackTrace();
@@ -41,7 +41,7 @@ public class UtenteDAO {
 			PreparedStatement ps = conn.prepareStatement(query);
 			ps.setString(1, ut.getUsername());
 			ps.setString(2, ut.getPassword());
-			ps.setInt(3, ut.getAutorita());
+			ps.setString(3, ut.getAutorita());
 			int tmp=ps.executeUpdate();
 			if(tmp==1) {
 				esito=true;
@@ -76,7 +76,7 @@ public class UtenteDAO {
 		try {
 			PreparedStatement ps = conn.prepareStatement(query);
 			ps.setString(1, ut.getPassword());
-			ps.setInt(2, ut.getAutorita());
+			ps.setString(2, ut.getAutorita());
 			ps.setString(3, ut.getUsername());
 			int tmp=ps.executeUpdate();
 			if(tmp==1) {
@@ -111,7 +111,7 @@ public class UtenteDAO {
 		res.setUsername(rs.getString("Username"));
 		res.setPassword(rs.getString("Password"));
 
-		res.setAutorita(rs.getInt("Autorità"));
+		res.setAutorita(rs.getString("Autorità"));
 		return res;
 
 	}

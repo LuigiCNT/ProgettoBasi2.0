@@ -32,7 +32,7 @@ public void setAutorita(String autorita) {
 public int hashCode() {
 	final int prime = 31;
 	int result = 1;
-	result = prime * result + Autorita;
+	result = prime * result + ((Autorita == null) ? 0 : Autorita.hashCode());
 	result = prime * result + ((Password == null) ? 0 : Password.hashCode());
 	result = prime * result + ((Username == null) ? 0 : Username.hashCode());
 	return result;
@@ -46,7 +46,10 @@ public boolean equals(Object obj) {
 	if (getClass() != obj.getClass())
 		return false;
 	Utente other = (Utente) obj;
-	if (Autorita != other.Autorita)
+	if (Autorita == null) {
+		if (other.Autorita != null)
+			return false;
+	} else if (!Autorita.equals(other.Autorita))
 		return false;
 	if (Password == null) {
 		if (other.Password != null)
