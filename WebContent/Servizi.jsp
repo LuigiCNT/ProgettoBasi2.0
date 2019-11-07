@@ -41,6 +41,7 @@
   <body>
   
    <% AttrezziDAO aDAO = new AttrezziDAO(); %>
+   <% CorsiDAO cDAO = new CorsiDAO(); %>
   <div class="site-wrap">
 
     <div class="site-mobile-menu">
@@ -108,6 +109,7 @@
     </div>
   <br><br><br>
 	
+	    ATTREZZI
         <ul>
         <% for( Attrezzi a : aDAO.getAll()){ %>
         <li> <%=a.getNome()%> </li>
@@ -116,6 +118,18 @@
         }
         	%>
         </ul>
+        
+        CORSI
+        <ul>
+        <% for( Corsi c : cDAO.getAll()){ %>
+        <li> <%=c.getNome()%> </li>
+        
+        <%	
+        }
+        	%>
+        </ul>
+        
+        
 
    
           <div class="col-lg-5">
