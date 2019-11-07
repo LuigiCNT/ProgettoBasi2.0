@@ -1,3 +1,9 @@
+
+
+
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+    <!-- %@ import java.util.Vector;  %> -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -42,18 +48,19 @@
         <div class="container py-2">
           <div class="row align-items-center">
             <div class="col-6">
-              <a href="https://www.google.com/maps/place/Spartan+Gym+A.S.D./@37.920421,15.9791221,17z/data=!3m1!4b1!4m5!3m4!1s0x1314ed23f6344475:0x754ccbd34c9040a5!8m2!3d37.9204168!4d15.9813108?hl=it" target="_blank" class="p-2 pl-0"><span class="icon-map-marker"></span></a>
+              <a href="https://www.google.com/maps/place/Spartan+Gym+A.S.D./@37.920421,15.9791221,17z/data=!3m1!4b1!4m5!3m4!1s0x1314ed23f6344475:0x754ccbd34c9040a5!8m2!3d37.9204168!4d15.9813108?hl=it"  target="_blank" class="p-2 pl-0"><span class="icon-map-marker"></span></a>
               <a href="https://www.facebook.com/SPARTAN-GYM-2067914556839010/"  target="_blank" class="p-2 pl-0"><span class="icon-facebook"></span></a>
               <a href="https://www.instagram.com/spartan_gym_palizzi_marina/?hl=it"  target="_blank" class="p-2 pl-0"><span class="icon-instagram"></span></a>
-             
             </div>
-          <div class="col-6">
+            <div class="col-6">
               <div class="d-flex ml-auto">
                 <a href="#" class="d-flex align-items-center ml-auto mr-4">
                   <span class="icon-envelope mr-2"></span>
                   <span class="d-none d-md-inline-block">youremail@domain.com</span>
                 </a>
-             <a href="http://localhost:8080/ProgettoBasi2.0/login.jsp"> Login </a>
+                <a href="/ProgettoBasi2.0/login.jsp"> Login </a>
+                  
+               
               </div>
             </div>
           </div>
@@ -76,7 +83,7 @@
 
                     <ul class="site-menu js-clone-nav d-none d-lg-block">
                       
-                      <li><a href="http://localhost:8080/ProgettoBasi2.0/Servizi.jsp">Servizi</a></li>
+                      <li><a href="services.html">Servizi</a></li>
                       
                       
                       <li><a href="about.html">Chi siamo?</a></li>
@@ -90,102 +97,16 @@
         </div>
       </div>
     </div>
-  
-
-    <div class="slide-one-item home-slider owl-carousel">
-      
-      <div class="site-blocks-cover" style="background-image: url(images/hero_bg_2.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
-        <div class="container">
-          <div class="row align-items-center justify-content-center">
-            <div class="col-md-7 text-center" data-aos="fade">
-             <h1>Get In Shape &amp; Be <strong>Healthy</strong></h1>
-            </div>
-          </div>
-        </div>
-      </div>  
-
-       <div class="site-blocks-cover" style="background-image: url(images/hero_bg_1.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
-        <div class="container">
-          <div class="row align-items-center justify-content-center">
-            <div class="col-md-7 text-center" data-aos="fade">
-             <h1>Build Your <strong>Body</strong> Strong</h1>
-            </div>
-          </div>
-        </div>
-      </div> 
-      
-
-    </div>
-
-    <div class="border-bottom">
-      <div class="row no-gutters">
-        <div class="col-md-6 col-lg-3">
-          <div class="w-100 h-100 block-feature p-5 bg-light">
-            <span class="d-block mb-3">
-              <span class="flaticon-padmasana display-4"></span>
-            </span>
-            <h2>Ricomposizione Corporea</h2>
-            <p>Perdita di grasso e aumento massa muscolare</p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="w-100 h-100 block-feature p-5">
-            <span class="d-block mb-3">
-              <span class="flaticon-weight display-4"></span>
-            </span>
-            <h2>Bodybuilding</h2>
-            <p> Allenamento mirato alla costruzione di un corpo ideale ispirato alla ideale fisico dell' antica Grecia.</p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="w-100 h-100 block-feature p-5 bg-light">
-            <span class="d-block mb-3">
-              <span class="flaticon-boxing-gloves display-4"></span>
-            </span>
-            
-            <h2>Allenamento Funzionale</h2>
-            <p>tipologia di allenamento strutturato su esercizi che mirano a sviluppare la cosiddetta forza funzionale ossia la forza in funziona di un determinato movimento o azione specifica</p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="w-100 h-100 block-feature p-5">
-            <span class="d-block mb-3">
-              <span class="flaticon-running display-4"></span>
-            </span>
-            <h2>Prepazione atletica</h2>
-            <p>Preparazione per ogni tipo di sport o concorso nazionale (carabinieri/polizia/militari ecc.)</p>
-          </div>
-        </div>
-      </div>
-    </div> <!-- .block-feature -->
-
-    <footer class="site-footer">
-      <div class="container">
+  <br><br><br>
+	
         
 
-        <div class="row">
-          <div class="col-lg-7">
-            <div class="row">
-              <div class="col-6 col-md-4 col-lg-8 mb-5 mb-lg-0">
-                <h3 class="footer-heading mb-4 text-primary">About</h3>
-                <p>Non la solita "palestra",ma uno studio di Personal Training semi-privato dove verrai guidato passo passo al raggiungimento dei risultati che ti sei prefissato</p>
-                <p><a href="#" class="btn btn-primary pill text-white px-4">Read More</a></p>
-              </div>
-              <div class="col-6 col-md-4 col-lg-4 mb-5 mb-lg-0">
-                <h3 class="footer-heading mb-4 text-primary">Menu Rapido</h3>
-                <ul class="list-unstyled">
-                  <li><a href="#">Chi Siamo?</a></li>
-                  <li><a href="#">Servizi</a></li>
-                  
-                </ul>
-              </div>
-            </div>
-          </div>
+   
           <div class="col-lg-5">
             <div class="row mb-5">
               <div class="col-md-12"><h3 class="footer-heading mb-4 text-primary">Contatti</h3></div>
               <div class="col-md-6">
-                <p>Palizzi Marina 89038, RC <br> Via Romano Cesare, snc </p>    
+                <p>Palizzi Marina 89038, RC <br> Via Cesare Romano, snc </p>    
               </div>
               <div class="col-md-6">
                 Tel. + (123) 3240-345-9348 <br>
@@ -198,7 +119,7 @@
               <div class="col-md-12">
                 <p>
                   <a href="https://www.facebook.com/SPARTAN-GYM-2067914556839010/" class="pb-2 pr-2 pl-0"><span class="icon-facebook"></span></a>
-                  
+                  <a href="https://www.google.com/maps/place/Spartan+Gym+A.S.D./@37.920421,15.9791221,17z/data=!3m1!4b1!4m5!3m4!1s0x1314ed23f6344475:0x754ccbd34c9040a5!8m2!3d37.9204168!4d15.9813108?hl=it"  target="_blank" class="p-2 pl-0"><span class="icon-map-marker"></span></a>
                   <a href="https://www.instagram.com/spartan_gym_palizzi_marina/?hl=it" class="p-2"><span class="icon-instagram"></span></a>
                  
 
