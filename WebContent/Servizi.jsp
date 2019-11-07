@@ -3,7 +3,15 @@
 
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-    <!-- %@ import java.util.Vector;  %> -->
+    
+    <%@ page import= "java.util.Vector"  %>
+    <%@ page import= "it.unirc.twd.beans.Attrezzi" %>   
+    <%@ page import= "it.unirc.twd.beans.AttrezziDAO" %> 
+    <%@ page import= "it.unirc.twd.beans.CorsiDAO" %> 
+    <%@ page import= "it.unirc.twd.beans.Corsi" %> 
+   
+    
+    
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -32,6 +40,7 @@
   </head>
   <body>
   
+   <% AttrezziDAO aDAO = new AttrezziDAO(); %>
   <div class="site-wrap">
 
     <div class="site-mobile-menu">
@@ -99,7 +108,14 @@
     </div>
   <br><br><br>
 	
+        <ul>
+        <% for( Attrezzi a : aDAO.getAll()){ %>
+        <li> a </li>
         
+        <%	
+        }
+        	%>
+        </ul>
 
    
           <div class="col-lg-5">
