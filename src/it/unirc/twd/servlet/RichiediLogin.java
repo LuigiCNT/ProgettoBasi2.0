@@ -43,7 +43,7 @@ public class RichiediLogin extends HttpServlet {
 			System.out.println("loggato".toString());
 			response.getWriter().append("Ho controllato che esiste");
 			if(loggato.getAutorita().equals("si")) {
-				//dispatcho alla index amministratore
+				//reindirizzo alla index amministratore
 			}
 			else if(loggato.getAutorita().equals("no")){
 				response.getWriter().append("Sono all'autorità");
