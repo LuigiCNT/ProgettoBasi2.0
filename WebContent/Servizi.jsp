@@ -110,7 +110,7 @@
 	
         <ul>
         <% for( Attrezzi a : aDAO.getAll()){ %>
-        <li> a </li>
+        <li> <%=a.getNome()%> </li>
         
         <%	
         }
