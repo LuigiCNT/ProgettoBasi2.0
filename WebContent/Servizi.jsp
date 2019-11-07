@@ -122,7 +122,7 @@
         CORSI
         <ul>
         <% for( Corsi c : cDAO.getAll()){ %>
-        <li> <%=c.getNome()%> </li>
+        <li> <%=c.getTipologia()%> </li>
         
         <%	
         }
