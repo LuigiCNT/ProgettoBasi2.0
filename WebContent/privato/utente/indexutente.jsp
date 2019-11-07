@@ -143,32 +143,28 @@
       <div class="container">
         
 
-        <div class="row">
+    <div class="row">
           <div class="col-lg-7">
             <div class="row">
               <div class="col-6 col-md-4 col-lg-8 mb-5 mb-lg-0">
                 <h3 class="footer-heading mb-4 text-primary">About</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat quos rem ullam, placeat amet sint vel impedit reprehenderit eius expedita nemo consequatur obcaecati aperiam, blanditiis quia iste in! Assumenda, odio?</p>
+                <p>Non la solita "palestra",ma uno studio di Personal Training semi-privato dove verrai guidato passo passo al raggiungimento dei risultati che ti sei prefissato</p>
                 <p><a href="#" class="btn btn-primary pill text-white px-4">Read More</a></p>
               </div>
               <div class="col-6 col-md-4 col-lg-4 mb-5 mb-lg-0">
-                <h3 class="footer-heading mb-4 text-primary">Quick Menu</h3>
+                <h3 class="footer-heading mb-4 text-primary">Menu Rapido</h3>
                 <ul class="list-unstyled">
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Services</a></li>
-                  <li><a href="#">Approach</a></li>
-                  <li><a href="#">Sustainability</a></li>
-                  <li><a href="#">News</a></li>
-                  <li><a href="#">Careers</a></li>
+                  <li><a href="#">Chi Siamo?</a></li>
+                  <li><a href="#">Servizi</a></li>
                 </ul>
               </div>
             </div>
           </div>
           <div class="col-lg-5">
             <div class="row mb-5">
-              <div class="col-md-12"><h3 class="footer-heading mb-4 text-primary">Contact Info</h3></div>
+              <div class="col-md-12"><h3 class="footer-heading mb-4 text-primary">Contatti</h3></div>
               <div class="col-md-6">
-                <p>New York - 2398 <br> 10 Hadson Carl Street</p>    
+                <p>Palizzi Marina 89038, RC <br> Via Cesare Romano, snc </p>    
               </div>
               <div class="col-md-6">
                 Tel. + (123) 3240-345-9348 <br>
@@ -177,14 +173,15 @@
             </div>
 
             <div class="row">
-              <div class="col-md-12"><h3 class="footer-heading mb-4 text-primary">Social Icons</h3></div>
+              <div class="col-md-12"><h3 class="footer-heading mb-4 text-primary">Social</h3></div>
               <div class="col-md-12">
                 <p>
-                  <a href="#" class="pb-2 pr-2 pl-0"><span class="icon-facebook"></span></a>
-                  <a href="#" class="p-2"><span class="icon-twitter"></span></a>
-                  <a href="#" class="p-2"><span class="icon-instagram"></span></a>
-                  <a href="#" class="p-2"><span class="icon-vimeo"></span></a>
+                  <a href="https://www.facebook.com/SPARTAN-GYM-2067914556839010/" class="pb-2 pr-2 pl-0"><span class="icon-facebook"></span></a>
+                  <a href="https://www.google.com/maps/place/Spartan+Gym+A.S.D./@37.920421,15.9791221,17z/data=!3m1!4b1!4m5!3m4!1s0x1314ed23f6344475:0x754ccbd34c9040a5!8m2!3d37.9204168!4d15.9813108?hl=it"  target="_blank" class="p-2 pl-0"><span class="icon-map-marker"></span></a>
+                  <a href="https://www.instagram.com/spartan_gym_palizzi_marina/?hl=it" class="p-2"><span class="icon-instagram"></span></a>
+                 
 
+            
                 </p>
               </div>
             </div>

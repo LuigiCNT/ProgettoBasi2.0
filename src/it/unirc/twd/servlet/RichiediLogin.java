@@ -6,6 +6,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.swing.JOptionPane;
 
 import it.unirc.twd.beans.Utente;
 import it.unirc.twd.beans.UtenteDAO;
@@ -39,6 +40,7 @@ public class RichiediLogin extends HttpServlet {
 		boolean esiste = uDAO.login(u);
 		if(esiste) {
 			Utente loggato = uDAO.getUtente(u);
+			System.out.println("loggato".toString());
 			response.getWriter().append("Ho controllato che esiste");
 			if(loggato.getAutorita().equals("si")) {
 				//dispatcho alla index amministratore
@@ -49,7 +51,7 @@ public class RichiediLogin extends HttpServlet {
 			}
 		}
 		else {
-			//Mando un errore
+			
 		}
 		
 	}
